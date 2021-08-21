@@ -1,0 +1,91 @@
+
+
+:root{
+    --gridCols: 10;
+    --gridRows: 10;
+}
+body{
+    font-family: "Caladea";
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    font-size: 4vmin;
+    background: linear-gradient(35deg, #0f2027, #203a43, #2c5364);
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(var(--gridCols), 0);
+    grid-template-rows: repeat(var(--gridRows), 0);
+
+    height: 90vh;
+    width: 90vh;
+    border-color:#0f2027;
+    border-style: solid;
+    border-width: 3px;
+    margin-top: 5vh;
+}
+.square{
+    text-align: center;
+    background-color: white;
+}
+.colour-settings{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3vh;
+}
+.controls{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    height: 80vh;
+    width: 20vw;
+    background-color: #42565e;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);box-shadow: 5px;
+}
+button{
+    text-align: start;
+    font-family: "Caladea";
+    width: 70%;
+    font-size: 4vmin;
+    margin-top: 3vh;
+    background-color: #42565e;
+    border-color: #0f2027;
+    border-radius: 5%;
+    color: #0f2027;
+}
+button:hover{
+    background-color: #384950;
+    color: #091318;
+}
+.darken{
+    margin-top: 10vh;
+}
+input[type=text]{
+    width: 10vmin;
+    height: 6vmin;
+    font-size: 4vmin;
+    margin: 0 10px 0 10px;
+}
+input[type=color]{
+    margin: 0 10px 0 0;
+    width: 15vmin;
+    height: 7vmin;
+}
+.size-settings{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    margin-top: 5vh;
+    font-family: "Cinzel Decorative";
+    font-weight: bold;
+    margin-left: 1.5vw;
+}
