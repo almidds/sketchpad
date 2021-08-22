@@ -96,14 +96,16 @@ input[type=color]{
     margin-top: 5vh;
     font-family: "Cinzel Decorative";
     font-weight: bold;
-    margin-left: 1.5vw;
+    align-self: flex-start;
+    margin-left: 5vh;
     margin-bottom: 0;
 }
 h3{
     font-family: "Cinzel Decorative";
     font-size: 2vmin;
     margin-top: 0;
-    margin-left: -3vw;
+    align-self: flex-start;
+    margin-left: 5vh;
     text-align: left;
     margin-bottom: 7vh;
 }

@@ -269,34 +269,17 @@ function getInkColour(e){
 //Settings~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const gridlinesButton = document.querySelector(".gridlines");
 gridlinesButton.addEventListener("click", toggleGridlines);
-gridlinesButton.addEventListener("mouseenter", buttonFocus);
-gridlinesButton.addEventListener("mouseleave", buttonUnfocus(nogridlines));
 
 //toggles gridlines
 function toggleGridlines(e){
     if(nogridlines){
         tiles.forEach(tile => tile.style.outline = "1px #CCC solid");
         nogridlines = false;
-        e.target.style.backgroundColor = "#384950";
-        e.target.style.color = "#091318";
+        gridlinesButton.classList.add("selected");
     }else{
         tiles.forEach(tile => tile.style.outline = "0");
         nogridlines = true;
-        e.target.style.backgroundColor = "#42565e";
-        e.target.style.color = "#0f2027";
-    }
-}
-
-
-//Colours in buttons when hovered over
-function buttonFocus(e){
-    e.target.style.backgroundColor = "#384950";
-    e.target.style.color = "#091318";
-}
-function buttonUnfocus(e, state){
-    if(state){
-        e.target.style.backgroundColor = "#42565e";
-        e.target.style.color = "#0f2027";
+        gridlinesButton.classList.remove("selected");
     }
 }
 
