@@ -91,7 +91,7 @@ button{
     width: 87.5%;
     text-align: start;
     font-family: "Caladea";
-    font-size: 4vmin;
+    font-size: 3vmin;
     margin-top: 3vh;
     background-color: #42565e;
     border-color: #0f2027;
@@ -119,12 +119,12 @@ input[type=color]{
 .size-settings{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: start;
     justify-content: center;
-    align-items:flex-start;
+    align-items: flex-start;
 }
 .sizeText{
-    font-size: 4vmin;
+    font-size: 3vmin;
     margin-top: 0.5vh;
     margin-left: -2vw;
 }
