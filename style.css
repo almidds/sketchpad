@@ -1,5 +1,4 @@
 
-
 :root{
     --gridCols: 10;
     --gridRows: 10;
@@ -12,6 +11,7 @@ body{
     padding: 0;
     font-size: 4vmin;
     background: linear-gradient(35deg, #0f2027, #203a43, #2c5364);
+    background-attachment: fixed;
 }
 .grid{
     display: grid;
@@ -63,7 +63,7 @@ button:hover{
     background-color: #384950;
     color: #091318;
 }
-.darken{
+.eraser{
     margin-top: 10vh;
 }
 input[type=text]{
@@ -79,13 +79,35 @@ input[type=color]{
 }
 .size-settings{
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
+}
+.sizeText{
+    font-size: 3vmin;
+    margin-top: 0.5vh;
+    margin-left: -2vw;
+}
+.size{
+    margin-left: -2vw;
 }
 .title{
     margin-top: 5vh;
     font-family: "Cinzel Decorative";
     font-weight: bold;
     margin-left: 1.5vw;
+    margin-bottom: 0;
+}
+h3{
+    font-family: "Cinzel Decorative";
+    font-size: 2vmin;
+    margin-top: 0;
+    margin-left: -3vw;
+    text-align: left;
+    margin-bottom: 7vh;
+}
+.selected{
+    background-color: #384950;
+    color: #091318;
 }

@@ -4,7 +4,7 @@
         <title>Sketch Pad</title>
         <script src="script.js" defer></script>
         <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="">
+        <link rel="shortcut icon" href="/pencil-icon.png">
 
     </head>
 
@@ -12,12 +12,14 @@
         <!--Colour controls--------------------------------------------------------->        
         <section class="controls">
             <h1 class="title">The drawing board</h1>
+            <h3>Created by Andrew Middleton</h3>
             <div class="size-settings">
-                <p>gridsize</p>
-                <input type="text" class="size">
+                <input type="range" min="1" max="32" value="16" class="size">
+                <p class="sizeText">gridsize</p>
             </div>
             <button class="gridlines">Toggle gridlines</button>
             <button class="clear">Clear</button>
+
         </section>
         <!--Grid--------------------------------------------------------->        
         <section class="grid" draggable="false">
@@ -30,6 +32,8 @@
                 <p>Ink Colour</p>
             </div>
             <button class="colour-picker">Colour Picker</button>
+            <button class="fill">Bucket</button>
+
             <button class="eraser">Eraser</button>
             <button class="darken">Shading</button>
             <button class="lighten">Lighten</button>
